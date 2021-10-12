@@ -1,7 +1,7 @@
 sparqlfmt
 =========
 
-an opinionated sparql* formatter
+an opinionated sparql\* formatter
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/sparqlfmt.svg)](https://npmjs.org/package/sparqlfmt)
@@ -10,23 +10,25 @@ an opinionated sparql* formatter
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
 $ npm install -g sparqlfmt
-$ sfmt COMMAND
-running command...
-$ sfmt (-v|--version|version)
+$ sfmt (-v|--version)
 sparqlfmt/0.1.0 darwin-x64 node-v14.18.0
-$ sfmt --help [COMMAND]
+$ sfmt --help
+an opinionated sparql formatter
+
 USAGE
-  $ sfmt COMMAND
-...
+  $ sfmt FILE
+
+ARGUMENTS
+  FILE  file to format
+
+OPTIONS
+  -d, --dry-run  log the formatted output without overwriting the file
+  -h, --help     show CLI help
+  -v, --version  get the current sfmt version
 ```
 <!-- usagestop -->
-# Commands
-<!-- commands -->
-
-<!-- commandsstop -->

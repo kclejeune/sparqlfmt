@@ -11,10 +11,10 @@ class SparqlFormat extends Command {
 
   static flags = {
     // add --version flag to show CLI version
-    version: flags.version({ char: "v" }),
+    version: flags.version({ char: "v", description: "get the current sfmt version" }),
     help: flags.help({ char: "h" }),
     // flag with no value (-f, --force)
-    "dry-run": flags.boolean({ char: "d" }),
+    "dry-run": flags.boolean({ char: "d", description: "log the formatted output without overwriting the file" }),
   };
 
   static args = [
@@ -45,10 +45,6 @@ class SparqlFormat extends Command {
     } else {
       writeFileSync(args.file, formatted);
     }
-  }
-
-  async catch(error: any) {
-    this.warn(error);
   }
 }
 
